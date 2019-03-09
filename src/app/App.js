@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <div className="App">
         <header className="App-header">
@@ -19,6 +19,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          <button className='btn btn-danger'>Bootstrap?</button>
         </header>
       </div>
     );
