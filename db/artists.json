@@ -1,0 +1,24 @@
+{
+  "artist": [
+    {
+      "id":1,
+      "name":"Nahko",
+      "genreName":"BeeBop",
+      "description":"Doing it right",
+      "stageName":"Main Stage",
+      "day":"Saturday",
+      "imageLink":"http://nahko.com/wp-content/uploads/2017/08/about-nahko.jpg",
+      "artistUrl": "http://www.supertramp.com/"
+    },
+    {
+      "id":2,
+      "name":"Supertrump",
+      "genreName":"BeeBop",
+      "description":"Walls",
+      "stageName":"Hidden Stage",
+      "day":"Sunday",
+      "imageLink":"https://www.toonpool.com/user/144959/files/supertrump_2695075.jpg",
+      "artistUrl": "http://www.supertramp.com/"
+    }
+  ]
+}
