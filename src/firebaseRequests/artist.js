@@ -8,7 +8,7 @@ const getRequest = () => {
       .then(res => {
         const artist = [];
         if (res.data !== null) {
-          console.log(res.data);
+          console.log(res);
           Object.keys(res.data).forEach(fbKey => {
             res.data[fbKey].id = fbKey;
             artist.push(res.data[fbKey]);
