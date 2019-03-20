@@ -6,7 +6,6 @@ const getRequest = () => {
     axios
       .get(`${constants.firebaseConfig.databaseURL}/artist.json`)
       .then(res => {
-        console.log(res);
         const artist = [];
         if (res.data !== null) {
           console.log(res.data);
