@@ -11,7 +11,6 @@ class home extends React.Component {
     artistRequest
       .getRequest()
       .then((artists) => {
-        console.log(artists);
         this.setState({artists});
       })
       .catch((err) => {

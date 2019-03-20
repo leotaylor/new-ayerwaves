@@ -7,7 +7,7 @@ import { withRouter } from "react-router-dom";
 import './navbar.css';
 
 import authRequests from '../../firebaseRequests/auth';
-// import ArtistSelect from '../navbar/artistSelect/ArtistSelect';
+import ArtistSelect from './artistSelect/ArtistSelect';
 
 class Navbar extends React.Component {
 
@@ -38,17 +38,17 @@ class Navbar extends React.Component {
       logout();
     };
 
-    // const artistComponent = this.state.artists.map((artist) => {
-    //   return (
-    //     <ArtistSelect
-    //       details={artist}
-    //       key={artist.id}
-    //       type="text"
-    //       value={artist.id}
-    //       id={artist.id}
-    //     />
-    //   );
-    // });
+    const artistComponent = this.state.artists.map((artist) => {
+      return (
+        <ArtistSelect
+          details={artist}
+          key={artist.id}
+          type="text"
+          value={artist.id}
+          id={artist.id}
+        />
+      );
+    });
 
     return (
       <div className="Navbar">
@@ -79,25 +79,11 @@ class Navbar extends React.Component {
                     <Link to="/bring">What To Bring</Link>
                   </li>
                   <li className='dropdown navlink'>
-                    {/* <Link to={this.singleArtist}> */}
                     <select className='select' onChange={this.singleArtist}>
                       <option>Artists</option>
-                      {/* {artistComponent} */}
+                      {artistComponent}
                     </select>
-                    {/* </Link> */}
                   </li>
-                  {/* <li>
-                    <li className="dropdown">
-                      <button className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">VENDORS <span class="caret"></span></button>
-                      <ul className="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                      </ul>
-                    </li>
-                  </li> */}
                   <li className="navlink">
                     <Link to="/admin">Admin</Link>
                   </li>
